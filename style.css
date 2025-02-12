@@ -57,7 +57,7 @@ body{
   
   
   @media (min-width: 767px) {
-    .hidden{
+    .hidden2{
       display: flex;
     }
   }
@@ -107,7 +107,7 @@ body{
     }
   }
   @media (max-width: 767px) {
-    .hidden{
+    .hidden2{
         display: none !important;
     }
     
