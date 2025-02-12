@@ -1,0 +1,109 @@
+.ui-wheel-of-fortune {
+  --_items: 29;
+  all: unset;
+  aspect-ratio: 1 / 1;
+  container-type: inline-size;
+  direction: ltr;
+  display: grid;
+  position: relative;
+  width: 80vmin;
+  border: 10px dotted rgb(254, 44, 85);
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.ui-wheel-of-fortune::after {
+  aspect-ratio: 1/cos(30deg);
+  background-color: crimson;
+  clip-path: polygon(50% 100%,100% 0,0 0);
+  content: "";
+  height: 4cqi;
+  position: absolute;
+  place-self: start center;
+  scale: 1.4;
+}
+
+.ui-wheel-of-fortune > * {
+  position: absolute;
+}
+
+.ui-wheel-of-fortune button {
+  aspect-ratio: 1 / 1;
+  background: hsla(0, 0%, 100%, .8);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 5cqi;
+  place-self: center;
+  width: 20cqi;
+  transition: background-color 0.3s;
+}
+
+.ui-wheel-of-fortune button:hover {
+  background-color: #ddd;
+}
+
+.ui-wheel-of-fortune ul {
+  all: unset;
+  clip-path: inset(0 0 0 0 round 50%);
+  display: grid;
+  inset: 0;
+  place-content: center start;
+}
+
+.ui-wheel-of-fortune li {
+  align-content: center;
+  aspect-ratio: 1 / calc(2 * tan(180deg / var(--_items)));
+  background: hsl(calc(360deg / var(--_items) * calc(var(--_idx))), 100%, 75%);
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  display: grid;
+  font-size: 5cqi;
+  grid-area: 1 / -1;
+  padding-left: 1ch;
+  rotate: calc(360deg / var(--_items) * calc(var(--_idx) - 1));
+  transform-origin: center right;
+  user-select: none;
+  width: 50cqi;
+}
+.custom-icon .swal2-success {
+  border-color: rgb(254, 44, 85) !important;
+}
+
+.custom-icon .swal2-success-line-tip,
+.custom-icon .swal2-success-line-long {
+  background-color: rgb(254, 44, 85) !important;
+}
+.ui-wheel-of-fortune li:nth-of-type(1) { --_idx: 1; }
+.ui-wheel-of-fortune li:nth-of-type(2) { --_idx: 2; }
+.ui-wheel-of-fortune li:nth-of-type(3) { --_idx: 3; }
+.ui-wheel-of-fortune li:nth-of-type(4) { --_idx: 4; }
+.ui-wheel-of-fortune li:nth-of-type(5) { --_idx: 5; }
+.ui-wheel-of-fortune li:nth-of-type(6) { --_idx: 6; }
+.ui-wheel-of-fortune li:nth-of-type(7) { --_idx: 7; }
+.ui-wheel-of-fortune li:nth-of-type(8) { --_idx: 8; }
+.ui-wheel-of-fortune li:nth-of-type(9) { --_idx: 9; }
+.ui-wheel-of-fortune li:nth-of-type(10) { --_idx: 10; }
+.ui-wheel-of-fortune li:nth-of-type(11) { --_idx: 11; }
+.ui-wheel-of-fortune li:nth-of-type(12) { --_idx: 12; }
+.ui-wheel-of-fortune li:nth-of-type(13) { --_idx: 13; }
+.ui-wheel-of-fortune li:nth-of-type(14) { --_idx: 14; }
+.ui-wheel-of-fortune li:nth-of-type(15) { --_idx: 15; }
+.ui-wheel-of-fortune li:nth-of-type(16) { --_idx: 16; }
+.ui-wheel-of-fortune li:nth-of-type(17) { --_idx: 17; }
+.ui-wheel-of-fortune li:nth-of-type(18) { --_idx: 18; }
+.ui-wheel-of-fortune li:nth-of-type(19) { --_idx: 19; }
+.ui-wheel-of-fortune li:nth-of-type(20) { --_idx: 20; }
+.ui-wheel-of-fortune li:nth-of-type(21) { --_idx: 21; }
+.ui-wheel-of-fortune li:nth-of-type(22) { --_idx: 22; }
+.ui-wheel-of-fortune li:nth-of-type(23) { --_idx: 23; }
+.ui-wheel-of-fortune li:nth-of-type(24) { --_idx: 24; }
+.ui-wheel-of-fortune li:nth-of-type(25) { --_idx: 25; }
+.ui-wheel-of-fortune li:nth-of-type(26) { --_idx: 26; }
+.ui-wheel-of-fortune li:nth-of-type(27) { --_idx: 27; }
+.ui-wheel-of-fortune li:nth-of-type(28) { --_idx: 28; }
+.ui-wheel-of-fortune li:nth-of-type(29) { --_idx: 29; }
+
+
+
+
